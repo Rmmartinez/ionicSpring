@@ -1,0 +1,19 @@
+package controllers;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+
+import entities.Customer;
+
+@Controller
+public class CustomerController {
+	
+	public List<Customer> getAll(){
+		List<Customer> customers = new ArrayList<>();
+		customers.add(new Customer());
+		
+		return customers; 
+	}
+}

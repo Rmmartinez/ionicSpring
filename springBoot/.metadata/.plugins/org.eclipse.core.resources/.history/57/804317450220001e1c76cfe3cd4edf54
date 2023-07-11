@@ -1,0 +1,50 @@
+package com.example.springBoot.entities;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
+@Entity
+@Table(name = "customers")
+@ToString
+@EqualsAndHashCode
+public class Customer {
+	private String firstname;
+	private String lasrname;
+	private String email;
+	private String phone;
+	private String address;
+	
+	public String getFirstname() {
+		return firstname;
+	}
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+	public String getLasrname() {
+		return lasrname;
+	}
+	public void setLasrname(String lasrname) {
+		this.lasrname = lasrname;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+	
+}

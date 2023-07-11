@@ -1,0 +1,16 @@
+package com.example.springBoot.services;
+
+import java.util.List;
+
+import com.example.springBoot.entities.Customer;
+
+public interface ICustomerService {
+	
+	List<Customer> getAll();
+
+	Customer getById(Long id);
+
+	void remove(Long id);
+
+	void save(Customer customer);
+}

@@ -1,0 +1,28 @@
+package controllers.copy2;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import entities.Customer;
+
+@RestController
+public class CustomerController {
+	
+	//Ruta 
+	@GetMapping("/api/customers")
+	public List<Customer> getAll(){
+		List<Customer> customers = new ArrayList<>();
+		customers.add(new Customer());
+		return customers; 
+	}
+	
+	@GetMapping("hola")
+	public int getnum(){
+		List<Customer> customers = new ArrayList<>();
+		customers.add(new Customer());
+		return 1; 
+	}
+}

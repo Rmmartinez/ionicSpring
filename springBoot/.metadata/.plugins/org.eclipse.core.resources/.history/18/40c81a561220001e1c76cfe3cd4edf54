@@ -1,0 +1,5 @@
+package com.example.springBoot.entities;
+
+public class Employee {
+
+}

@@ -1,0 +1,17 @@
+package com.example.springBoot;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import entities.Customer;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+	
+		SpringApplication.run(Application.class, args);
+	}
+
+}
